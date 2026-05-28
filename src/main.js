@@ -1,18 +1,12 @@
-const app = document.getElementById('app')
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
 
-app.innerHTML = `
-  <div style="text-align:center; font-family:sans-serif;">
-    <h1>Meu App 🚀</h1>
-    <button id="btn" style="padding:10px; font-size:16px;">
-      Clique aqui
-    </button>
-    <p id="texto"></p>
-  </div>
-`
-
-document.getElementById('btn').addEventListener('click', () => {
-  document.getElementById('texto').innerText = 'Funcionou ✅'
-})
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 
 
 
